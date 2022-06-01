@@ -27,7 +27,7 @@ app.get("/data", (req, res) => {
 });
 
 app.get('/bad', (req, res) => {
-    let num = 10;
+    let num = 30;
     let result = num.forEach((x) => {
         console.log(x);
     });
