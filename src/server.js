@@ -14,7 +14,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/person",validator, (req,res)=>{
-    res.send({ name: req.query.name})
+    res.status(200).json({
+        name: `${req.query.name}`,
+    });
         
 });
 
