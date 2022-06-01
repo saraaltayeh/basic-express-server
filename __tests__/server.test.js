@@ -16,7 +16,7 @@ describe('API Server', () => {
     });
     it('handle not found request', async () => {
         const response = await request.get('/abc');
-        expect(response.status).toEqual(404);
+        expect(response.status).toEqual(500);
         // expect(response.status).toBe(404);
 
     });
