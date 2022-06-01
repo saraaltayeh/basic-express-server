@@ -10,7 +10,7 @@ const app = express();
 app.use(logger);
 
 app.get("/", (req, res) => {
-    res.status(200).send('hello ');
+    res.status(200).send('welcome to my world');
 });
 
 app.get("/person",validator, (req,res)=>{
