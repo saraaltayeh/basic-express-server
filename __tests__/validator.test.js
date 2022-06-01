@@ -1,5 +1,5 @@
 'use strict';
-const validator = require('../src/middleware/validator');
+
 const supertest = require('supertest');
 const server = require('../src/server');
 const request = supertest(server.app);
